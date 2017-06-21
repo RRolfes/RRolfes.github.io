@@ -5,7 +5,7 @@
 </head>
 <body>
   <header>
-    <img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjjsqiAoc7UAhUDLmMKHdOdDX0QjRwIBw&url=https%3A%2F%2Fwww.eventbrite.com%2Fe%2Fapp-strategy-workshop-happy-hour-san-francisco-ca-tickets-20628626778&psig=AFQjCNH7sX9Z0kkRaIvJe2dr2zNLG6DM_w&ust=1498111118833418" alt="App-Academy-Logo">
+    <img src="https://d3ec71zsp1ok15.cloudfront.net/assets/shared/logos/aa-full-white-b025088b6f2d38b07911985400650eb002f96b64c2df0705ca27fae8636ceb29.svg" alt="App-Academy-Logo">
     <nav>
       <h1>French Toast</h1>
       <ul>
@@ -51,6 +51,37 @@
       <li>Place the soaked bread onto the pan or electric heater at medium high.  Wait about 40 second then flip the bread to the other side or just cook until both sides are golden. when the toast is fully cooked slide it onto a plate.</li>
       <li>Finally you can add the finishing touches to your french toast like hot apple sauce, powdered sugar, extra cinnamon, syrup or anything else you may prefer.  Congratulation you have created your very own French Toast and you are now ready to eat!</li>
     </ol>
+  </section>
+
+  <section>
+    <form action="/reviews" method="post">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name">
+
+      <label for="rating">Rating</label>
+      1<input type="radio" name="rating" value="1" checked>
+      2<input type="radio" name="rating" value="2">
+      3<input type="radio" name="rating" value="3">
+      4<input type="radio" name="rating" value="4">
+      5<input type="radio" name="rating" value="5">
+
+      <label for="expertise">Cooking Expertise</label>
+
+      <select id="expertise" name="expertise">
+        <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
+        <option value="Sometimes cook">Sometimes cook</option>
+        <option value="Cook everyday">Cook everyday</option>
+        <option value="Cooking is a hobby">Cooking is a hobby</option>
+        <option value="Professional chef">Professional chef</option>
+
+      </select>
+
+      <label>Review
+        <textarea name="review" rows="10" cols="30"></textarea>
+      </label>
+
+      <input type="submit" value="Submit Review">
+    </form>
   </section>
 
   <footer><p>Original Recipe by Sirmijo at <a href="http://www.instructables.com/id/How-To-Make-French-Toast-2/">Instructables</a></p></footer>
